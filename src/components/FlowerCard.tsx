@@ -69,10 +69,6 @@ export default function FlowerCard({ flower, imageUrl, onReset }: FlowerCardProp
         </div>
 
         <div className={`${styles.buttonWrapper} animate-slide-up`}>
-          <button className={styles.backButton} onClick={onReset}>
-            <RefreshCcw size={18} style={{ marginRight: '8px' }} />
-            다른 식물 찾아보기
-          </button>
           <a 
             href="https://lens.google.com/"
             target="_blank"
@@ -84,6 +80,13 @@ export default function FlowerCard({ flower, imageUrl, onReset }: FlowerCardProp
             구글 렌즈로 더 정확하게 확인하기
           </a>
         </div>
+      </div>
+
+      <div className={styles.stickyButtonWrapper}>
+        <button className={styles.backButton} onClick={onReset}>
+          <RefreshCcw size={18} style={{ marginRight: '8px' }} />
+          다른 식물 찾아보기
+        </button>
       </div>
     </div>
   );
