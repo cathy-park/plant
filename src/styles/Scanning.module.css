@@ -1,0 +1,64 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--color-bg);
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageContainer {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.scannerLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #FF107A; /* Neon pink override */
+  box-shadow: 0 0 20px 8px rgba(255, 16, 122, 0.6);
+  animation: scanPulse 2.5s infinite linear;
+}
+
+.textContainer {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.analyzingText {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-text);
+  margin-bottom: 8px;
+  animation: pulseOpacity 2s infinite ease-in-out;
+}
+
+.subText {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  animation: pulseOpacity 1.5s infinite;
+}
+
+@keyframes pulseOpacity {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
