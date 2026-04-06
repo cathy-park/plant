@@ -36,7 +36,17 @@ export default function FlowerCard({ flower, imageUrl, onReset }: FlowerCardProp
         </div>
 
         <div className={`${styles.heroSection} animate-slide-up`}>
-          <h1 className={styles.title}>{flower.name}</h1>
+          {(() => {
+            const nameParts = flower.name.match(/^(.+?)\s*\((.+?)\)$/) || [null, flower.name, ''];
+            const koreanName = nameParts[1];
+            const scientificName = nameParts[2];
+            return (
+              <>
+                <h1 className={styles.title}>{koreanName}</h1>
+                {scientificName && <span className={styles.scientificName}>{scientificName}</span>}
+              </>
+            );
+          })()}
           {flower.flowerLanguage && (
             <p className={styles.flowerLanguage}><Flower size={16} /> {flower.flowerLanguage}</p>
           )}
