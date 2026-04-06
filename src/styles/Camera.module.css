@@ -125,3 +125,20 @@
   margin-bottom: 48px;
   text-align: center;
 }
+
+.textLink {
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  font-size: 0.8rem;
+  text-decoration: underline;
+  cursor: pointer;
+  margin-top: 24px;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+  display: block;
+}
+
+.textLink:hover {
+  opacity: 1;
+}

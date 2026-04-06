@@ -43,17 +43,16 @@ export default function CameraCapture({ onImageCapture, onMockTest }: CameraCapt
           <ImageIcon size={20} style={{ marginRight: '8px' }} />
           앨범에서 가져오기
         </button>
-        {onMockTest && (
-          <button 
-            className={styles.outlineButton} 
-            onClick={onMockTest}
-            style={{ marginTop: '12px', borderStyle: 'dashed', color: 'var(--color-text-light)' }}
-          >
-            <FlaskConical size={18} style={{ marginRight: '8px' }} />
-            결과 디자인 샘플 보기 (API 미사용)
-          </button>
-        )}
       </div>
+
+      {onMockTest && (
+        <button 
+          className={styles.textLink} 
+          onClick={onMockTest}
+        >
+          [디버그] 결과 페이지 샘플 레이아웃 보기
+        </button>
+      )}
 
       <input
         type="file"
