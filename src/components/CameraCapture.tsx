@@ -50,7 +50,7 @@ export default function CameraCapture({ onImageCapture, onMockTest }: CameraCapt
           className={styles.textLink} 
           onClick={onMockTest}
         >
-          [디버그] 결과 페이지 샘플 레이아웃 보기
+          결과 페이지 샘플 보기
         </button>
       )}
 

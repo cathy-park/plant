@@ -102,15 +102,15 @@ export default function Home() {
 
   const handleMockTest = () => {
     setFlowerData({
-      name: '왕벚나무 (Prunus yedoensis)',
-      flowerLanguage: '절세의 미인, 순결',
-      features: '#연분홍색 #다섯갈래꽃잎 #풍성한꽃개화',
-      care: '햇빛을 좋아하고 배수가 잘되는 사양토에서 잘 자랍니다. 개화기 전후로 물을 충분히 주세요.',
-      tips: '봄꽃의 낭만을 상징합니다. 꽃잎이 얇아 비바람에 금방 떨어지므로 절정일 때 사진을 많이 찍어두세요.',
-      themeColor: '#FFB7C5',
+      name: '장미 (Rosa hybrida)',
+      flowerLanguage: '열렬한 사랑, 아름다움, 질투',
+      features: '#겹꽃 #강렬한레드 #벨벳질감꽃잎',
+      care: '햇빛을 매우 좋아하며 통풍이 잘되는 곳에서 키워주세요. 겉흙이 말랐을 때 물을 듬뿍 주는 것이 좋습니다.',
+      tips: '시든 꽃을 바로 잘라주면 새로운 꽃이 더 잘 피어납니다. 절화로 감상할 때는 물에 설탕을 살짝 넣으면 더 오래 볼 수 있어요.',
+      themeColor: '#E11D48',
       plantType: 'flower',
     });
-    setImagePreview('/sample-flower.jpg'); // dummy valid string so UI render won't break
+    setImagePreview('/sample-rose.jpg');
     setStep('result');
   };
 
